@@ -57,6 +57,7 @@ class MainActivity : BaseMvpActivity<MainPresenter>(), MainContract.View<ComicFa
         rv_comicList.adapter?.notifyDataSetChanged()
     }
 
+
     override fun onSuccess(data: ComicFaceHttpBean?) {
         mComics = data!!.comics
 
